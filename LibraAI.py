@@ -122,18 +122,15 @@ def create_book_list(book_list):
             📚 {book[0]}
             </div>
 
-            <div style="margin:8px 0;">
-            color:white;">
+            <div style="margin:8px 0;color:white;">
             👤 <b>Author:</b> {book[1]}
             </div>
 
-            <div style="margin:8px 0;">
-            color:white;">
+            <div style="margin:8px 0;color:white;">
             🏷️ <b>Category:</b> {book[2]}
             </div>
 
-            <div style="margin:8px 0;">
-            color:white;">
+            <div style="margin:8px 0;color:white;">
             📌 <b>Status:</b> {status_badge(book[3])}
             </div>
 
