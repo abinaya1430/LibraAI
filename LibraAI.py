@@ -21,7 +21,6 @@ ADMIN_PASSWORD = "admin123"
 # =========================================================
 # BOOK DATABASE
 # =========================================================
-
 books = [
     ["Python Programming", "John Smith", "Programming", "Available"],
     ["Data Science Fundamentals", "Anna Wilson", "Data Science", "Available"],
