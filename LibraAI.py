@@ -110,7 +110,7 @@ def create_book_list(book_list):
         padding:20px;
         margin:14px 0;
         border-radius:18px;
-        background:Light blue;
+        background:#90D5FF;
         border:1px solid #30394f;
         text-align:left;">
 
