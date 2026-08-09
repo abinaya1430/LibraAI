@@ -93,7 +93,6 @@ def status_badge(status):
 # =========================================================
 # BOOK DISPLAY
 # =========================================================
-
 def create_book_list(book_list):
 
     if not book_list:
@@ -140,6 +139,7 @@ def create_book_list(book_list):
     html += "</div>"
 
     return html
+
 
 
 # =========================================================
