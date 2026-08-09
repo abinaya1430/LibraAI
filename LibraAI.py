@@ -1359,11 +1359,8 @@ with gr.Blocks(
     status_button.click(
         lambda: create_book_list(books),
         outputs=status_output
-    )
-
-
-# =========================================================
-# RUN
-# =========================================================
-
-app.launch(share=True)
+    ) 
+demo.launch(
+    server_name="0.0.0.0",
+    server_port=7860
+)
