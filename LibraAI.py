@@ -118,6 +118,7 @@ def create_book_list(book_list):
             font-size:22px;
             font-weight:bold;
             margin-bottom:12px;">
+            color:white;">
             📚 {book[0]}
             </div>
 
