@@ -91,46 +91,82 @@ def status_badge(status):
 
 # =========================================================
 # BOOK DISPLAY
-# =========================================================
+# ========================================================
+def create_book_list(book_list):
 
+    if not book_list:
+
+        return "## ❌ No books found."
+
+    html = """
+
+    <div style="width:100%;">
+
+    """
+
+    for book in book_list:
 
         html += f"""
+
         <div style="
-        padding:20px;
-        margin:14px 0;
-        border-radius:18px;
-        background:#90D5FF;
-        border:1px solid #30394f;
-        text-align:left;">
+
+            padding:20px;
+
+            margin:14px 0;
+
+            border-radius:18px;
+
+            background:#90D5FF;
+
+            border:1px solid #30394f;
+
+            text-align:left;
+
+            color:#000000;
+
+        ">
 
             <div style="
-            font-size:22px;
-            font-weight:bold;
-            margin-bottom:12px;">
-            📚 {book[0]}
+
+                font-size:22px;
+
+                font-weight:bold;
+
+                margin-bottom:12px;
+
+            ">
+
+                📚 {book[0]}
+
             </div>
 
-            <div style="margin:8px 
-            👤 <b>Author:</b> {book[1]}
+            <div style="margin:8px 0;">
+
+                👤 <b>Author:</b> {book[1]}
+
             </div>
 
-            <div style="margin:8px 
-            🏷️ <b>Category:</b> {book[2]}
+            <div style="margin:8px 0;">
+
+                🏷️ <b>Category:</b> {book[2]}
+
             </div>
 
-            <div style="margin:8px 
-            📌 <b>Status:</b> 
-            {status_badge(book[3])}
+            <div style="margin:8px 0;">
+
+                📌 <b>Status:</b> {status_badge(book[3])}
+
             </div>
 
         </div>
+
         """
 
     html += "</div>"
 
     return html
 
-
+        
 
 # =========================================================
 # STUDENT LOGIN
