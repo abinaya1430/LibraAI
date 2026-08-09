@@ -93,16 +93,6 @@ def status_badge(status):
 # BOOK DISPLAY
 # =========================================================
 
-def create_book_list(book_list):
-
-    if not book_list:
-        return "## ❌ No books found."
-
-    html = """
-    <div style="width:100%;">
-    """
-
-    for book in book_list:
 
         html += f"""
         <div style="
@@ -139,6 +129,7 @@ def create_book_list(book_list):
     html += "</div>"
 
     return html
+
 
 
 # =========================================================
@@ -932,7 +923,7 @@ with gr.Blocks(
                 "🔄Refresh"
             )
 
-        search_results = gr.HTML(
+        search_results = gr.Markdown(
             value=create_book_list(books)
         )
 
@@ -1166,7 +1157,7 @@ with gr.Blocks(
             "📚 VIEW ALL BOOK STATUS"
         )
 
-        status_output = gr.HTML(
+        status_output = gr.Markdown(
             value=create_book_list(books)
         )
 
