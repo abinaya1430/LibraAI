@@ -110,7 +110,7 @@ def create_book_list(book_list):
         padding:20px;
         margin:14px 0;
         border-radius:18px;
-        background:#182033;
+        background:Light blue;
         border:1px solid #30394f;
         text-align:left;">
 
@@ -118,23 +118,18 @@ def create_book_list(book_list):
             font-size:22px;
             font-weight:bold;
             margin-bottom:12px;">
-            color:white;
-            ">
             📚 {book[0]}
             </div>
 
             <div style="margin:8px 
-            0;color:white;">
             👤 <b>Author:</b> {book[1]}
             </div>
 
             <div style="margin:8px 
-            0;color:white;">
             🏷️ <b>Category:</b> {book[2]}
             </div>
 
             <div style="margin:8px 
-            0;color:white;">
             📌 <b>Status:</b> 
             {status_badge(book[3])}
             </div>
